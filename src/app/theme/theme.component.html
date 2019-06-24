@@ -1,0 +1,31 @@
+
+<body [ngStyle]="{'background-color': bodycolor, 'color':textcolor, 'font-family':font}">
+<div class="bodycontent">
+  <div class="bodycontent-left">
+
+  <h3>Hi,</h3>
+      <h4>please select your theme from below options</h4>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1" [checked]=theme1active
+        (click)= "theme1()">Theme 1</mat-radio-button><br>
+        <mat-radio-button value="2" [checked]=theme2active (click)= "theme2()">Theme 2</mat-radio-button><br>
+        <mat-radio-button value="3" [checked]=theme3active (click)= "theme3()">Theme 3</mat-radio-button><br>
+      </mat-radio-group>
+
+    <h4>please select font option</h4>
+
+  <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1" [checked]= Robotoactive (click)= "Roboto()">Roboto</mat-radio-button><br>
+      <mat-radio-button value="2" [checked]= montserratctive (click)= "montserrat()">montserrat</mat-radio-button><br>
+    </mat-radio-group>
+  </div>
+
+<div  class="bodycontent-right">
+    <p [ngStyle]="{'background-color': container }" id="rcorners1">This is a sample container with random text
+        in the center of the container with curved
+        borders.</p>
+</div>
+</div>
+</body>
+
+
